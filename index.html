@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" style type="text/css" href="css/style.css" />
+    <!--Font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+    <!--Cabecera con logo y menu de navegacion-->
+    <header class="menu">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo-transparencia.png" alt="logo" /></a>
+        </div>      
+
+            <nav class="nav-cabecera">
+                <ul>
+                   <li><a href="index.html">HOME</a></li>
+                   <li><a href="pages/nosotros.html">NOSOTROS</a></li>
+                    <li><a href="pages/portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="pages/servicios.html">SERVICIOS</a></li>
+                   <li><a href="#contacto">CONTACTO</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <!--seccion titulo de bienvenida y boton de contacto-->
+        <section class="seccion-bienvenida">
+            <h1>
+                Hola,<br />
+                somos <b>JD</b><br />
+                Web Desingn
+            </h1>
+            <button id="boton-bienvenida"><a href="#contacto">¡Contactanos!</a></button>
+        </section>
+
+              <!--Sección de nosotros-->
+              <section  class="grid-nosotros">
+                <div class="titulos-nosotros">
+                    <h2>NOSOTROS</h2>
+                    <h3>Nos apasiona lo que hacemos y lo transmitimos en cada pieza que producimos, siempre con una mirada
+                        estratégica, y en virtud de un objetivo.</h3>
+                </div>
+                <div class="nosotros">
+                <div class="item-nosotros">
+                    <a href="nosotros.html#daniel" target="_blank"><img src="img/Daniel.png" alt="Maxi"
+                            class="img-nosotros" /></a>
+                            
+                    <h3>DANIEL</h3>
+                    <p>Founder</p>
+                </div>
+                <div class="item-nosotros">
+                    <a href="nosotros.html#josefina" target="_blank"><img src="img/josefina.png" alt="Rocío"
+                            class="img-nosotros" /></a>
+                    <h3>JOSEFINA</h3>
+                    <p>Founder</p>
+                </div>
+            </div>
+                <div class="boton-nosotros">
+                    <button><a href="nosotros.html">Ver más...</a></button>
+                </div>
+            </section>
+
+        <!--Sección de portfolio-->
+        <section class="grid-portfolio">
+            <div class="titulos-portfolio">
+                <h2>PORTFOLIO</h2>
+            </div>
+            <div class="portfolio">
+                    <a href="https://google.com" target="_blank">
+                        <img src="img/Portfolio/portfolio1.jpg" alt="portfolio1" />
+                    </a>
+                    <a href="https://google.com" target="_blank">
+                        <img src="img/Portfolio/portfolio2.jpg" alt="portfolio2" />
+                    </a>
+                    <a href="https://google.com" target="_blank">
+                        <img src="img/Portfolio/portfolio3.jpg" alt="portfolio3" />
+                    </a>
+                    <a href="https://google.com" target="_blank">
+                        <img src="img/Portfolio/portfolio4.jpg" alt="portfolio4" />
+                    </a>
+                    <a href="https://google.com" target="_blank">
+                        <img src="img/Portfolio/portfolio5.jpg" alt="portfolio5" />
+                    </a>
+                    <a href="https://google.com" target="_blank">
+                        <img src="img/Portfolio/portfolio6.jpg" alt="portfolio6" />
+                    </a>
+                    <a href="https://google.com" target="_blank">
+                        <img src="img/Portfolio/portfolio7.jpg" alt="portfolio7" />
+                    </a>
+                    <a href="https://google.com" target="_blank">
+                        <img src="img/Portfolio/portfolio8.jpg" alt="portfolio8" />
+                    </a>  
+            </div>
+           <div class="boton-portfolio">
+            <button><a href="portfolio.html">Ver más...</a></button>
+        </div>
+        </section>
+
+        <!--Sección de servicios-->
+        <section class="grid-servicios">
+            <div class="titulos-servicios">
+                <h2>SERVICIOS</h2>
+            </div>
+            <div class="servicios">
+                <div class="item-servicios">
+                    <a href="servicios.html"><img src="img/Servicios/servicio1.jpg" alt="servicios1" /></a>
+                    <h3>Web Design</h3>
+                </div>
+                <div class="item-servicios"> 
+                    <a href="servicios.html"><img src="img/Servicios/servicio2.png" alt="servicios2" /></a>
+                    <h3>E-Commers</h3>
+                </div>
+                <div class="item-servicios">
+                    <a href="servicios.html"><img src="img/Servicios/servicio3.png" alt="servicios3"></a>
+                    <h3>Web Design</h3>
+                </div>
+            </div>
+            <div class="boton-servicios">
+            <button><a href="servicios.html">Ver más...</a></button>
+        </div>
+        </section>
+
+        <!--Sección de contacto-->
+        <section id="contacto">
+            <div class="section formulario">
+                <h2>CONTACTO</h2>
+                <div>
+                    <form>
+                        <p>
+                            <label for="nombre">NOMBRE</label>
+                            <input type="text" name="nombre" placeholder="Nombre" />
+                            <label for="apellido">APELLIDO</label>
+                            <input type="text" name="apellido" placeholder="Apellido" />
+                        </p>
+                        <label for="asunto">ASUNTO</label>
+                        <input type="text" name="asunto" placeholder="Asunto" />
+                        </p>
+                        <label for="mensaje">MENSAJE</label>
+                        <textarea name="mensaje" for="mensaje" placeholder="Dejanos tu mensaje..."
+                            maxlength="300"></textarea>
+                        <button>Enviar</button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!--fin del main-->
+
+    <!--Pie de pagina con redes sociales y copyright-->
+    <footer class="footer">
+        <div class="contenido-footer">
+            <h3>SEGUINOS</h3>
+            <div class="redes">
+                <a href="https://github.com/josefina0994"><img src="img/github.png" alt="Github" /></a>
+                <a href="https://www.instagram.com/jose.dorola/"><img src="img/ig.png" alt="Instagram" /></a>
+                <a href="mailto:jdweb@gmail.com"><img src="img/correo.png" alt="Correo" /></a>
+            </div>
+        </div>
+        <div id="caja-vacia" class="contenido-footer"></div>
+        <div class="contenido-footer">
+            <h3>UBICACIÓN</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13135.648188299712!2d-58.45712856044922!3d-34.6063855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca6d27d5629f%3A0x2b49bfd861c699f5!2sStudio%20Design%20Web%20-%20Dise%C3%B1o%20P%C3%A1ginas%20Webs!5e0!3m2!1ses!2sar!4v1665148546189!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    <div id="copyright">
+        <p>Copyright &#169 2022 Todos los derechos reservados | Creado por JD Design Web</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,392 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222020;
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #08fdd8;
+}
+
+/*Estilos de la cabecera*/
+.menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222020;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid rgb(139, 139, 139);
+  z-index: 2;
+}
+
+.logo {
+  display: flex;
+  padding: 8px;
+  margin-left: 20px;
+  box-shadow: none;
+  filter: none;
+}
+
+.logo img{
+  width: 50px;
+  height: 50px;
+}
+
+/*Estilos del menú*/
+
+.nav-cabecera ul{
+  width: 30%;
+  list-style: none;
+  text-decoration: none;
+  margin: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+/*Fin del menú*/
+
+/*Estilos generales de los h1, b, h2, y botones*/
+h1 {
+  font-size: 100px;
+  line-height: 120px;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+}
+
+button {
+  border: 1px solid #08fdd8; /*anchura, estilo y color borde*/
+  padding: 15px 40px; /*espacio alrededor texto*/
+  margin: 40px;
+  background-color: transparent;
+  color: #08fdd8;
+  text-decoration: none; /*decoración texto*/
+  font-size: 17px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+/*Fin de estilos generales de los h1, h2, b y botones*/
+
+/*Estilo general de las secciones y los box interiores*/
+
+section {
+  width: 100%;
+  height: auto;
+}
+
+h3,
+p {
+  font-size: 20px;
+  text-align: center;
+}
+
+/*Fin de estilos general de las secciones y box intenriores*/
+
+/*Sección de bienvenida*/
+
+.seccion-bienvenida {
+  padding: 200px 100px 100px;
+  margin: 50px;
+}
+
+.seccion-bienvenida b {
+  color: #08fdd8;
+}
+
+#boton-bienvenida {
+  margin-left: 0;
+}
+
+/*CSS general grid del index*/
+.titulos-nosotros, .titulos-portfolio{
+  display: grid;
+  grid-column: 1/3;
+  padding: 30px;
+  border: 1px solid white;
+}
+
+.boton-nosotros, .boton-portfolio{
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
+}
+
+.titulos-nosotros, .titulos-portfolio h1{
+  padding-bottom: 30px;
+}
+
+/*Fin CSS general grid del index*/
+
+/*Sección nosotros del index*/
+
+.grid-nosotros{
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(2, 60%);
+  
+  }
+
+  .nosotros{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid white;
+   
+  }
+
+  .item-nosotros{
+    display: flex;
+    margin: 50px;
+    border: 1px solid white;
+  }
+
+  .img-nosotros{
+      width: 300px;
+      height: 450px;
+  }
+
+/* Fin sección nosotros del index*/
+
+/*Sección portfolio del index*/
+.grid-portfolio{
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(2, 30%);
+  justify-content: center;
+  text-align: center;
+  }
+
+.portfolio{
+  grid-column:1/3;
+}
+
+.portfolio img {
+  width: 250px;
+  height: 200px;
+}
+
+/* Fin sección portfolio de index*/
+
+/*Sección servicios del index*/
+
+.grid-servicios{
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid white;
+   text-align: center;
+  }
+
+.servicios{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 70%;
+  margin-left: 300px;
+  border: 1px solid white;
+}
+
+.item-servicios{
+  border: 1px solid white;
+}
+
+.servicios img {
+  width: 300px;
+  height: 150px;
+}
+
+.titulos-servicios, .boton-servicios{
+  grid-column:1/4;
+}
+
+
+
+/* Fin sección servicios del index*/
+
+/*CSS formulario y sección contacto*/
+.formulario {
+  width: 800px;
+  margin: 20px 500px;
+}
+
+form {
+  padding: 50px;
+  margin: auto;
+  border: 1px solid #08fdd8;
+  background-color: transparent;
+  text-align: left;
+}
+
+form label {
+  width: 75px;
+  background-color: transparent;
+  margin-right: 5px;
+}
+
+form input {
+  width: 270px;
+  padding: 3px 10px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  font-family: "Oswald", sans-serif;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  resize: none;
+  display: block;
+  font-family: "Oswald", sans-serif;
+}
+/*Fin CSS formulario*/
+
+.titulos.paginas {
+  padding-top: 100px;
+}
+
+/*comienzo pagina nosotros*/
+
+.nosotros-introduccion {
+  text-align: center;
+  margin: 100px;
+}
+
+.nosotros-introduccion p {
+  font-size: 20px;
+}
+
+.box-nosotros {
+  position: relative;
+  width: 1200px;
+  height: 500px;
+  margin: 10px 200px 0;
+}
+
+.nosotros-foto {
+  position: absolute;
+  top: 60px;
+  left: 150px;
+  width: 250px;
+  height: 400px;
+}
+
+.nosotros-foto img {
+  width: 250px;
+  height: 400px;
+}
+
+.nosotros-datos {
+  position: absolute;
+  top: 60px;
+  left: 450px;
+  width: 600px;
+  height: 300px;
+}
+
+.nosotros-datos p {
+  font-size: 17px;
+  padding: 10px;
+  text-align: left;
+}
+
+.nosotros-datos h3 {
+  text-align: left;
+  font-size: 30px;
+  padding: 5px 10px;
+  color: #08fdd8;
+}
+
+/*fin pagina nosotros*/
+
+/*Comienzo pagina servicios*/
+
+.box-servicios {
+  display: block;
+  float: left;
+  width: 350px;
+  margin: 10px;
+}
+
+.box-servicios h3 {
+  text-align: center;
+  font-size: 30px;
+  margin: 30px;
+}
+
+.box-servicios img {
+  width: 300px;
+  height: 150px;
+}
+
+/*css del footer*/
+.footer {
+  background-color: #08fdd8;
+  height: 320px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.contenido-footer {
+  display: block;
+  float: left;
+  text-align: center;
+  margin-left: 200px;
+  padding: 20px;
+  font-size: 21px;
+  color: #222020;
+}
+
+#caja-vacia {
+  display: block;
+  float: left;
+  width: 400px;
+  height: 200px;
+}
+
+/*Mapa*/
+iframe {
+  width: 400px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+/*Clase para las imagenes de redes sociales*/
+.redes img {
+  width: 120px;
+  height: 120px;
+  box-shadow: none;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+/*Fin de footer*/
+
+/*css copyright*/
+#copyright {
+  background-color: #222020;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 0 0 2px black;
+  position: fixed;
+  bottom: 0;
+  display: block;
+  width: 100%;
+}
