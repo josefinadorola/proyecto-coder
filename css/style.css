@@ -108,19 +108,14 @@ p {
   margin-left: 0;
 }
 
-/*CSS general grid del index*/
-.titulos-nosotros, .titulos-portfolio{
-  display: grid;
-  grid-column: 1/3;
+/*CSS general del index*/
+.titulos-nosotros, .titulos-portfolio, .titulos-servicios{
   padding: 30px;
-  border: 1px solid white;
 }
 
-.boton-nosotros, .boton-portfolio{
-  grid-column: 1/3;
+.boton-nosotros, .boton-portfolio, .boton-servicios{
   display: flex;
   justify-content: center;
-  border: 1px solid white;
 }
 
 .titulos-nosotros, .titulos-portfolio h1{
@@ -131,25 +126,16 @@ p {
 
 /*Sección nosotros del index*/
 
-.grid-nosotros{
-  display: grid;
-  grid-template-rows: repeat(3, auto);
-  grid-template-columns: repeat(2, 60%);
-  
-  }
 
   .nosotros{
     display: flex;
-    justify-content: center;
-    width: 100%;
-    border: 1px solid white;
-   
+    justify-content: center;   
   }
 
   .item-nosotros{
     display: flex;
+    flex-direction: column;
     margin: 50px;
-    border: 1px solid white;
   }
 
   .img-nosotros{
@@ -160,57 +146,35 @@ p {
 /* Fin sección nosotros del index*/
 
 /*Sección portfolio del index*/
-.grid-portfolio{
-  display: grid;
-  grid-template-rows: repeat(3, auto);
-  grid-template-columns: repeat(2, 30%);
-  justify-content: center;
-  text-align: center;
-  }
-
 .portfolio{
-  grid-column:1/3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+
 }
 
 .portfolio img {
-  width: 250px;
-  height: 200px;
+  width: 450px;
+  height: 400px;
 }
 
 /* Fin sección portfolio de index*/
 
 /*Sección servicios del index*/
 
-.grid-servicios{
-  display: grid;
-  grid-template-rows: repeat(3, auto);
-  grid-template-columns: repeat(3, 1fr);
-  border: 1px solid white;
-   text-align: center;
-  }
 
 .servicios{
   display: flex;
   justify-content: center;
-  gap: 30px;
-  width: 70%;
-  margin-left: 300px;
-  border: 1px solid white;
-}
-
-.item-servicios{
-  border: 1px solid white;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .servicios img {
-  width: 300px;
-  height: 150px;
+  width: 500px;
+  height: 300px;
 }
-
-.titulos-servicios, .boton-servicios{
-  grid-column:1/4;
-}
-
 
 
 /* Fin sección servicios del index*/
