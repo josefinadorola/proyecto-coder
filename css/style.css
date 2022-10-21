@@ -5,9 +5,12 @@
 }
 
 body {
-  background-color: #222020;
-  font-family: "Oswald", sans-serif;
+  background-image: url("../img/constelacion2.png");
+  background-size: 100%;
+  /*font-family: "Oswald", sans-serif;*/
+  font-family: 'Poppins', sans-serif;
   color: white;
+
 }
 
 a {
@@ -16,13 +19,14 @@ a {
 }
 
 /*Estilos de la cabecera*/
-.menu {
+.cabecera {
   display: flex;
   justify-content: space-between;
   background-color: #222020;
   position: fixed;
   top: 0;
   width: 100%;
+  height: 60px;
   border-bottom: 1px solid rgb(139, 139, 139);
   z-index: 2;
 }
@@ -33,24 +37,52 @@ a {
   margin-left: 20px;
   box-shadow: none;
   filter: none;
+  cursor: pointer;
+ 
 }
 
 .logo img{
   width: 50px;
   height: 50px;
+  transition: all 0.3s;
+}
+
+.logo img:hover{
+  transform: scale(1.2);
 }
 
 /*Estilos del menú*/
 
+.nav-cabecera{
+  width: 60%;
+  text-align:end;
+  margin-right: 30px;
+}
+
 .nav-cabecera ul{
-  width: 30%;
   list-style: none;
   text-decoration: none;
-  margin: 20px;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
 }
+
+.nav-cabecera ul li{
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 5px;
+  font-weight: bold;
+  transition: all .3s ease;
+}
+
+.nav-cabecera ul li:hover{
+  transform:scale(1.2)
+
+}
+
+.nav-cabecera ul li a:hover{
+  color: white;
+  border-bottom: 1px solid #08fdd8;
+
+}
+
 /*Fin del menú*/
 
 /*Estilos generales de los h1, b, h2, y botones*/
@@ -75,6 +107,7 @@ button {
   font-size: 17px;
   letter-spacing: 4px;
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 /*Fin de estilos generales de los h1, h2, b y botones*/
 
@@ -118,18 +151,12 @@ p {
   justify-content: center;
 }
 
-.titulos-nosotros, .titulos-portfolio h1{
-  padding-bottom: 30px;
-}
-
 /*Fin CSS general grid del index*/
 
 /*Sección nosotros del index*/
-
-
   .nosotros{
     display: flex;
-    justify-content: center;   
+    justify-content: center;     
   }
 
   .item-nosotros{
@@ -148,7 +175,7 @@ p {
 /*Sección portfolio del index*/
 .portfolio{
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
   margin: 20px;
 
@@ -197,6 +224,12 @@ form label {
   width: 75px;
   background-color: transparent;
   margin-right: 5px;
+
+}
+
+form p{
+  font-size: 15px;
+  text-align: left;
 }
 
 form input {
@@ -206,7 +239,7 @@ form input {
   border-radius: 3px;
   background-color: #f6f6f6;
   margin: 8px 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 textarea {
@@ -218,7 +251,7 @@ textarea {
   margin: 8px 0;
   resize: none;
   display: block;
-  font-family: "Oswald", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 /*Fin CSS formulario*/
 
@@ -348,9 +381,12 @@ iframe {
   background-color: #222020;
   padding: 10px;
   text-align: center;
-  text-shadow: 0 0 2px black;
   position: fixed;
   bottom: 0;
   display: block;
   width: 100%;
+}
+
+#copyright p{
+  font-size: 15px;
 }
