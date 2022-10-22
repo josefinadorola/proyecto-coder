@@ -54,8 +54,8 @@ a {
 /*Estilos del menú*/
 
 .nav-cabecera{
-  width: 60%;
-  text-align:end;
+  width: 100%;
+  text-align:center;
   margin-right: 30px;
 }
 
@@ -78,8 +78,8 @@ a {
 }
 
 .nav-cabecera ul li a:hover{
-  color: white;
-  border-bottom: 1px solid #08fdd8;
+  color: #FD2155;
+  border-bottom: 1px solid #FD2155;
 
 }
 
@@ -242,6 +242,10 @@ form input {
   font-family: "Poppins", sans-serif;
 }
 
+#asunto{
+  width: 100%;
+}
+
 textarea {
   width: 100%;
   height: 100px;
@@ -249,6 +253,7 @@ textarea {
   border-radius: 3px;
   background-color: #f6f6f6;
   margin: 8px 0;
+  padding: 3px 10px;
   resize: none;
   display: block;
   font-family: "Poppins", sans-serif;
