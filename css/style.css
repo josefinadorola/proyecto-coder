@@ -7,7 +7,6 @@
 body {
   background-image: url("../img/constelacion2.png");
   background-size: 100%;
-  /*font-family: "Oswald", sans-serif;*/
   font-family: 'Poppins', sans-serif;
   color: white;
 
@@ -31,25 +30,6 @@ a {
   z-index: 2;
 }
 
-.logo {
-  display: flex;
-  padding: 8px;
-  margin-left: 20px;
-  box-shadow: none;
-  filter: none;
-  cursor: pointer;
- 
-}
-
-.logo img{
-  width: 50px;
-  height: 50px;
-  transition: all 0.3s;
-}
-
-.logo img:hover{
-  transform: scale(1.2);
-}
 
 /*Estilos del menú*/
 
@@ -70,6 +50,7 @@ a {
   margin-top: 5px;
   font-weight: bold;
   transition: all .3s ease;
+  font-size: 20px;
 }
 
 .nav-cabecera ul li:hover{
@@ -78,8 +59,7 @@ a {
 }
 
 .nav-cabecera ul li a:hover{
-  color: #FD2155;
-  border-bottom: 1px solid #FD2155;
+  color:#ffffff;
 
 }
 
@@ -94,10 +74,10 @@ h1 {
 h2 {
   font-size: 50px;
   text-align: center;
-  padding: 20px;
+  padding: 50px;
 }
 
-button {
+.boton {
   border: 1px solid #08fdd8; /*anchura, estilo y color borde*/
   padding: 15px 40px; /*espacio alrededor texto*/
   margin: 40px;
@@ -108,6 +88,18 @@ button {
   letter-spacing: 4px;
   text-align: center;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.boton:hover{
+  background-color: #08fdd8;
+  transition: 1s;
+  color:#222020;
+}
+
+.boton:hover a{
+  color: #222020;
+  font-weight: bold;
 }
 /*Fin de estilos generales de los h1, h2, b y botones*/
 
@@ -124,27 +116,87 @@ p {
   text-align: center;
 }
 
-/*Fin de estilos general de las secciones y box intenriores*/
-
-/*Sección de bienvenida*/
-
-.seccion-bienvenida {
-  padding: 200px 100px 100px;
-  margin: 50px;
+.p-secciones{
+  font-style: italic;;
+  color: #d12c50;
+  display: flex;
+  margin-left: 30px;
 }
 
-.seccion-bienvenida b {
-  color: #08fdd8;
+/*Fin de estilos general de las secciones y box intenriores*/
+
+
+.seccion-bienvenida {
+  padding: 180px 100px;
+}
+
+.bienvenida{
+  font-size: 100px;
+  font-weight: bold;
+  display: block;
+
+}
+
+.bienvenida:hover{
+  transform:translate(50%,0);
+  transition: all 3s;
+  /*prefijos*/
+  -webkit-transform: translate(50%,0);
+  -o-transform: translate(50%,0);
+  -moz-transform: translate(50%,0);
+}
+
+#logo {
+  cursor: pointer;
+  margin-top: -50px;
+  width: 70px;
+  height: 100px;
+  transition: all 0.3s;
+
+}
+#logo:hover{
+ transform: scale(1.2);
+ -webkit-transform: scale(1.2);
+ -o-transform: scale(1.2);
+ -moz-transform: scale(1.2);
+}
+
+
+.grid-bienvenida{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+     
+}
+
+
+div.grid-b2{
+  display: flex;
+  justify-content: center;
+  opacity: 20%;
+  transition: all 2s;
+}
+
+div.grid-b2:hover{
+  transform: rotate3d(1, 2.0, 3.0, 30deg);
+  -webkit-transform: rotate3d(1, 2.0, 3.0, 30deg);
+  -o-transform: rotate3d(1, 2.0, 3.0, 30deg);
+  -moz-transform: rotate3d(1, 2.0, 3.0, 30deg);
+  opacity: 100%;
+}
+
+.grid-b2 img{
+  width: 400px;
+  height: 450px;
+ 
 }
 
 #boton-bienvenida {
   margin-left: 0;
 }
 
+/*Fin sección de bienvenida*/
+
 /*CSS general del index*/
-.titulos-nosotros, .titulos-portfolio, .titulos-servicios{
-  padding: 30px;
-}
 
 .boton-nosotros, .boton-portfolio, .boton-servicios{
   display: flex;
@@ -157,17 +209,31 @@ p {
   .nosotros{
     display: flex;
     justify-content: center;     
+
   }
 
   .item-nosotros{
     display: flex;
     flex-direction: column;
     margin: 50px;
+
+  }
+
+  .item-nosotros div img{
+    object-fit: cover;
   }
 
   .img-nosotros{
-      width: 300px;
+      width: 450px;
       height: 450px;
+      border-radius: 100%;
+      border: 2px solid #ffffff;
+      opacity: 40%;
+  }
+
+  .img-nosotros:hover{
+    opacity: 100%;
+    transition: 1s;
   }
 
 /* Fin sección nosotros del index*/
@@ -177,13 +243,20 @@ p {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 20px;
-
+  margin: 0 30px 0 30px;
 }
 
 .portfolio img {
-  width: 450px;
-  height: 400px;
+  width: 350px;
+  height: 300px;
+  border-radius: 10%;
+  margin: 10px;
+  filter: grayscale(100%);/*filtro byn sobre imagenes*/
+
+}
+
+.portfolio img:hover{
+  filter: none;
 }
 
 /* Fin sección portfolio de index*/
@@ -194,13 +267,14 @@ p {
 .servicios{
   display: flex;
   justify-content: center;
-  justify-content: space-around;
-  width: 100%;
 }
 
 .servicios img {
   width: 500px;
   height: 300px;
+  border-radius: 10%;
+  margin: 10px;
+  filter: grayscale(100%);/*filtro byn sobre imagenes*/
 }
 
 
@@ -257,6 +331,15 @@ textarea {
   resize: none;
   display: block;
   font-family: "Poppins", sans-serif;
+}
+
+form .boton{
+  margin: 0px 0;
+}
+
+form .boton:hover{
+  color: #222020;
+  font-weight: bold;
 }
 /*Fin CSS formulario*/
 

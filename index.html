@@ -9,16 +9,16 @@
     <!--Font family-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+ <!--Iconos-->
+<script src="https://kit.fontawesome.com/22c08125c6.js" crossorigin="anonymous"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Home</title>
 </head>
 
 <body>
     <!--Cabecera con logo y menu de navegacion-->
     <header class="cabecera">
-        <!--<div class="logo">
-            <a href="index.html"><img src="img/logo-transparencia.png" alt="logo" /></a>
-        </div> -->
             <nav class="nav-cabecera">
                 <ul>
                    <li><a href="index.html">Home</a></li>
@@ -33,58 +33,36 @@
     <main>
         <!--seccion titulo de bienvenida y boton de contacto-->
         <section class="seccion-bienvenida">
-            <h1>
-                <!--Hola,<br />
-                somos <b>JD</b><br />
-                Web Design-->
-                <span class="bienvenida">H</span>
-                <span class="bienvenida">o</span>
-                <span class="bienvenida">l</span>
-                <span class="bienvenida">a</span>
-                <span class="bienvenida">,</span>
-                <br>
-                <span class="bienvenida">s</span>
-                <span class="bienvenida">o</span>
-                <span class="bienvenida">m</span>
-                <span class="bienvenida">o</span>
-                <span class="bienvenida">s</span>
-                <img src="#" alt="logo">
-                <span class="bienvenida">,</span>
-                <br>
-                <span class="bienvenida">W</span>
-                <span class="bienvenida">e</span>
-                <span class="bienvenida">b</span>
-                <span class="bienvenida">D</span>
-                <span class="bienvenida">e</span>
-                <span class="bienvenida">s</span>
-                <span class="bienvenida">i</span>
-                <span class="bienvenida">g</span>
-                <span class="bienvenida">n</span>
-            </h1>
-            <button id="boton-bienvenida"><a href="#contacto">¡Contactanos!</a></button>
+            <div class="grid-bienvenida">
+            <div class="grid-b1">
+                <span class="bienvenida">Hola,</span>
+                <span class="bienvenida">somos <img src="../img/logo.png" alt="logo" id="logo">,</span>
+                <span class="bienvenida">Web Design</span>
+            </div>
+            <div class="grid-b2"><img src="../img/logo2.png" alt="logo"></div>
+        </div>
+            <button id="boton-bienvenida" class="boton"><a href="#contacto">¡Contactanos!</a></button>
         </section>
 
               <!--Sección de nosotros-->
               <section>
                 <div class="titulos-nosotros">
-                    <h2>NOSOTROS</h2>
-                    <h3>Nos apasiona lo que hacemos y lo transmitimos en cada pieza que producimos, siempre con una mirada
-                        estratégica, y en virtud de un objetivo.</h3>
+                    <h2 class="p-secciones"> < nosotros ></>
                 </div>
                 <div class="nosotros">
                 <div class="item-nosotros">
                     <div>
-                    <a href="nosotros.html#daniel" target="_blank"><img src="img/Daniel.png" alt="Maxi"
+                    <a href="nosotros.html#julian" target="_blank"><img src="../img/julian.png" alt="Julian"
                             class="img-nosotros" /></a>
                         </div>
                  <div>           
-                    <h3>DANIEL</h3>
+                    <h3>JULIAN</h3>
                     <p>Founder</p>
                 </div>
                 </div>
                 <div class="item-nosotros">
                     <div>
-                    <a href="nosotros.html#josefina" target="_blank"><img src="img/josefina.png" alt="Rocío"
+                    <a href="nosotros.html#josefina" target="_blank"><img src="../img/josefina.png" alt="Josefina"
                             class="img-nosotros" /></a>
                         </div>
                         <div>
@@ -94,14 +72,15 @@
             </div>
                 </div>
                 <div class="boton-nosotros">
-                    <button><a href="nosotros.html">Ver más...</a></button>
+                    <button class="boton"><a href="nosotros.html">Ver más...</a></button>
                 </div>
+                <h2 class="p-secciones"> < /nosotros ><h2/>
             </section>
 
         <!--Sección de portfolio-->
         <section>
             <div class="titulos-portfolio">
-                <h2>PORTFOLIO</h2>
+                <h2 class="p-secciones"> < portfolio ></>
             </div>
             <div class="portfolio">
                     <a href="https://google.com" target="_blank">
@@ -130,14 +109,15 @@
                     </a>  
             </div>
            <div class="boton-portfolio">
-            <button><a href="portfolio.html">Ver más...</a></button>
+            <button class="boton"><a href="portfolio.html">Ver más...</a></button>
         </div>
+        <h2 class="p-secciones"> < /portfolio ></>
         </section>
 
         <!--Sección de servicios-->
         <section>
             <div class="titulos-servicios">
-                <h2>SERVICIOS</h2>
+                <h2 class="p-secciones"> < servicios ><h2/>
             </div>
             <div class="servicios">
                 <div class="item-servicios">
@@ -166,37 +146,38 @@
                 </div>
             </div>
             <div class="boton-servicios">
-            <button><a href="servicios.html">Ver más...</a></button>
+            <button class="boton"><a href="servicios.html">Ver más...</a></button>
         </div>
+        <h2 class="p-secciones"> < /servicios ><h2/>
         </section>
 
         <!--Sección de contacto-->
         <section id="contacto">
+            <h2 class="p-secciones"> < contacto ><h2/>
             <div class="section formulario">
-                <h2>CONTACTO</h2>
                 <div>
                     <form>
                         <p>
                             <label for="nombre">NOMBRE</label>
-                            <input type="text" name="nombre" placeholder="Nombre" />
+                            <input type="text" name="nombre" placeholder="Nombre" id="nombre" />
                             <label for="email">CORREO</label>
-                            <input type="email" name="email" placeholder="correo@gmail.com" />
+                            <input type="email" name="email" placeholder="correo@gmail.com" id="email"/>
                         </p>
                         <p>
                         <label for="asunto">ASUNTO</label>
-                        <input type="text" name="asunto" placeholder="Asunto" id="asunto" />
-                        
+                        <input type="text" name="asunto" placeholder="Asunto" id="asunto" />    
                     </p>
                     <p>
                         <label for="mensaje">MENSAJE</label>
-                        <textarea name="mensaje" for="mensaje" placeholder="Dejanos tu mensaje..."
-                            maxlength="300"></textarea>
+                        <textarea name="mensaje" placeholder="Dejanos tu mensaje..."
+                            maxlength="300" id="mensaje"></textarea>
                         </p>
-                        <button>Enviar</button>
+                        <input type="submit" value="Enviar" class="boton">
                     </form>
 
                 </div>
             </div>
+            <h2 class="p-secciones"> < /contacto ><h2/>
         </section>
 
     </main>
