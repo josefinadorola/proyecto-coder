@@ -130,14 +130,16 @@ p {
   padding: 180px 100px;
 }
 
-.bienvenida{
+.texto-bienvenida{
   font-size: 100px;
   font-weight: bold;
   display: block;
+  line-height: 150px;
 
 }
 
-.bienvenida:hover{
+/*animación en el texto de bienvenida*/
+.texto-bienvenida:hover{
   transform:translate(50%,0);
   transition: all 3s;
   /*prefijos*/
@@ -146,9 +148,16 @@ p {
   -moz-transform: translate(50%,0);
 }
 
-#logo {
+
+.texto-bienvenida p{/*css de los puntos en el texto de bienvenida*/
+  display: inline;
+  font-size: 120px;
+  color: #d12c50;
+
+}
+
+#logo { /*logo del texto de bienvenida*/
   cursor: pointer;
-  margin-top: -50px;
   width: 70px;
   height: 100px;
   transition: all 0.3s;
@@ -161,15 +170,13 @@ p {
  -moz-transform: scale(1.2);
 }
 
-
-.grid-bienvenida{
+.grid-bienvenida{ /*grilla texto bienvenida y logo grande*/
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-     
+    
 }
 
-
-div.grid-b2{
+div.grid-b2{ /*div logo grande*/
   display: flex;
   justify-content: center;
   opacity: 20%;
@@ -184,7 +191,7 @@ div.grid-b2:hover{
   opacity: 100%;
 }
 
-.grid-b2 img{
+.grid-b2 img{ /*imagen logo grande*/
   width: 400px;
   height: 450px;
  
@@ -267,6 +274,7 @@ div.grid-b2:hover{
 .servicios{
   display: flex;
   justify-content: center;
+  margin-top: 0;
 }
 
 .servicios img {
