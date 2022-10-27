@@ -8,14 +8,9 @@ body {
   background-image: url("../img/constelacion2.png");
   background-size: 100%;
   background-attachment: fixed;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: white;
 
-}
-
-a {
-  text-decoration: none;
-  color: #08fdd8;
 }
 
 /*Estilos de la cabecera*/
@@ -49,18 +44,16 @@ a {
   display: inline-block;
   padding: 10px 20px;
   margin-top: 5px;
-  font-weight: bold;
-  transition: all .3s ease;
-  font-size: 15px;
+  font-size: 17px;
 }
-
-.nav-cabecera ul li:hover{
-  transform:scale(1.2)
-
+.nav-cabecera ul li a{
+  text-decoration: none;
+  color:#f6f6f6;
 }
 
 .nav-cabecera ul li a:hover{
-  color:#ffffff;
+  text-decoration: line-through;
+  color:#08fdd8;
 
 }
 
@@ -71,30 +64,25 @@ a {
 
 /*Fin del menú*/
 
-/*Estilos generales de los h1, b, h2, y botones*/
-h1 {
-  font-size: 100px;
-  line-height: 120px;
-}
-
-h2 {
-  font-size: 50px;
-  text-align: center;
-  padding: 50px;
-}
+/*Estilos generales de los botones*/
 
 .boton {
   border: 1px solid #08fdd8; /*anchura, estilo y color borde*/
   padding: 15px 40px; /*espacio alrededor texto*/
-  margin: 40px;
+  margin: 20px;
   background-color: transparent;
   color: #08fdd8;
   text-decoration: none; /*decoración texto*/
   font-size: 17px;
   letter-spacing: 4px;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   cursor: pointer;
+}
+
+.boton a{
+  text-decoration: none;
+  color: #08fdd8;
 }
 
 .boton:hover{
@@ -116,35 +104,38 @@ section {
   height: auto;
 }
 
+.h2-secciones{
+  font-family: 'Caveat', cursive;
+  font-style: italic;;
+  color: #d12c50;
+  display: flex;
+  margin-left: 30px;
+  font-size: 50px;
+  text-align: center;
+  padding: 50px;
+}
+
 h3,
 p {
   font-size: 20px;
   text-align: center;
 }
 
-.p-secciones{
-  font-style: italic;;
-  color: #d12c50;
-  display: flex;
-  margin-left: 30px;
-}
-
 /*Fin de estilos general de las secciones y box intenriores*/
 
-
+/*animación en el texto de bienvenida*/
 .seccion-bienvenida {
-  padding: 150px 100px;
+  padding: 210px 100px;
 }
 
 .texto-bienvenida{
-  font-size: 70px;
+  font-size: 100px;
+  line-height: 90px;
   font-weight: bold;
   display: block;
-  line-height: 70px;
+  }
 
-}
 
-/*animación en el texto de bienvenida*/
 .texto-bienvenida:hover{
   transform:translate(50%,0);
   transition: all 3s;
@@ -166,6 +157,7 @@ p {
   cursor: pointer;
   width: 60px;
   height: 80px;
+  margin-right: 5px;
   transition: all 0.3s;
 
 }
@@ -176,31 +168,13 @@ p {
  -moz-transform: scale(1.2);
 }
 
-.grid-bienvenida{ /*grilla texto bienvenida y logo grande*/
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-    
-}
-
-div.grid-b2{ /*div logo grande*/
+.subtitulo{
+  font-family: 'Caveat', cursive;
+  color:#8a8787;
+  padding: 30px 0;
   display: flex;
-  justify-content: center;
-  opacity: 20%;
-  transition: all 2s;
-}
-
-div.grid-b2:hover{
-  transform: rotate3d(1, 2.0, 3.0, 30deg);
-  -webkit-transform: rotate3d(1, 2.0, 3.0, 30deg);
-  -o-transform: rotate3d(1, 2.0, 3.0, 30deg);
-  -moz-transform: rotate3d(1, 2.0, 3.0, 30deg);
-  opacity: 100%;
-}
-
-.grid-b2 img{ /*imagen logo grande*/
-  width: 200px;
-  height: 250px;
- 
+  justify-content: left;
+  font-size: 40px;
 }
 
 #boton-bienvenida {
@@ -211,7 +185,7 @@ div.grid-b2:hover{
 
 /*CSS general del index*/
 
-.boton-nosotros, .boton-portfolio, .boton-servicios{
+.botones{
   display: flex;
   justify-content: center;
 }
@@ -294,44 +268,36 @@ div.grid-b2:hover{
 
 /* Fin sección servicios del index*/
 
-/*CSS formulario y sección contacto*/
+/*CSS formulario y página contacto*/
 .formulario {
-  width: 600px;
+  width: 50%;
   margin: 20px auto;
 }
 
 form {
   padding: 50px;
-  margin: auto;
   border: 1px solid #08fdd8;
   background-color: transparent;
   text-align: left;
 }
 
 form label {
-  width: 30%;
+  display: block;
   background-color: transparent;
-  margin-right: 5px;
-
-}
-
-form p{
   font-size: 0.3em;
   text-align: left;
+  font-size: 0.7em;
+  
 }
 
 form input {
-  width: 35%;
+  width: 100%;
   padding: 3px 10px;
+  margin: 8px 0;
   border: 1px solid #f6f6f6;
   border-radius: 3px;
   background-color: #f6f6f6;
-  margin: 8px 0;
-  font-family: "Poppins", sans-serif;
-}
-
-#asunto{
-  width: 100%;
+  font-family: 'Open Sans', sans-serif;
 }
 
 textarea {
@@ -344,11 +310,11 @@ textarea {
   padding: 3px 10px;
   resize: none;
   display: block;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 form .boton{
-  margin: 0px 0;
+  margin: 20px 0;
 }
 
 form .boton:hover{
@@ -437,43 +403,24 @@ form .boton:hover{
 
 /*css del footer*/
 .footer {
-  background-color: #08fdd8;
-  height: 320px;
+  display: flex;
+  justify-content: center;
   width: 100%;
+  height: auto;
   margin-top: 100px;
+  position: fixed;
+  bottom: 0;
 }
-
-.contenido-footer {
-  display: block;
-  float: left;
-  text-align: center;
-  margin-left: 200px;
-  padding: 20px;
-  font-size: 21px;
-  color: #222020;
-}
-
-#caja-vacia {
-  display: block;
-  float: left;
-  width: 400px;
-  height: 200px;
-}
-
-/*Mapa*/
-iframe {
-  width: 400px;
-  height: 200px;
-  margin-bottom: 20px;
-}
-
 /*Clase para las imagenes de redes sociales*/
-.redes img {
-  width: 120px;
-  height: 120px;
-  box-shadow: none;
-  padding: 25px;
-  margin-top: 30px;
+
+.fa-envelope, .fa-github, .fa-instagram{
+  padding: 10px;
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+.footer a{
+  color: #08fdd8;
 }
 
 /*Fin de footer*/
@@ -482,6 +429,7 @@ iframe {
 #copyright {
   background-color: #222020;
   padding: 10px;
+  margin-top: 50px;
   text-align: center;
   position: fixed;
   bottom: 0;
@@ -490,16 +438,54 @@ iframe {
 }
 
 #copyright p{
-  font-size: 15px;
+  font-size: 1em;
 }
 
-@media only screen and (min-device-width: 900px){
-  .nav-responsive ul{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin: 1rem;
-    list-style: none;
-    text-decoration: none;
+@media only screen and (max-device-width: 900px){
+  .nav-responsive ul li{
+ 
   }
+
+    /*animación en el texto de bienvenida*/
+  .seccion-bienvenida {
+    padding: 150px 30px 0;
+  }
+
+  .texto-bienvenida{
+  font-size: 1.5em;
+  line-height: 1em;
+  }
+
+  .texto-bienvenida p{/*css de los puntos en el texto de bienvenida*/
+  font-size: 1.5em;
+}
+
+#logo { /*logo del texto de bienvenida*/
+  width: 25px;
+  height: 35px;
+  margin-right: 3px;
+
+}
+
+.subtitulo{
+  padding: 20px 0 10px;
+  font-size: 1em;
+}
+
+#boton-bienvenida {
+  font-size: 0.6em;
+  padding: 12px 15px;
+}
+
+.fa-envelope, .fa-github, .fa-instagram{
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+#copyright p{
+  font-size: 0.8em;
+}
+
+/*Fin sección de bienvenida*/
+
 }

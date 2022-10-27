@@ -11,9 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
  <!--Iconos-->
- <script src="https://kit.fontawesome.com/22c08125c6.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/22c08125c6.js" crossorigin="anonymous"></script>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Home</title>
+    <title>Contacto</title>
 </head>
 
 <body>
@@ -40,31 +40,39 @@
               </ul>
           </nav>
     </header>
+        <!--Sección de contacto-->
+        <section id="contacto">
+            <h2 class="h2-secciones"> < contacto ><h2/>
+            <div class="section formulario">
+                <div>
+                    <form>
+                            <label for="nombre">Nombre y Apellido</label>
+                            <input type="text" name="nombre" placeholder="Nombre y Apellido" id="nombre" />
+                            <label for="email">Correo</label>
+                            <input type="email" name="email" placeholder="correo@gmail.com" id="email"/>
+                        
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" placeholder="Dejanos tu mensaje..."
+                            maxlength="300" id="mensaje"></textarea>
+                        <input type="submit" value="Enviar" class="boton">
+                    </form>
 
-    <main>
-        <!--seccion titulo de bienvenida y boton de contacto-->
-        <section class="seccion-bienvenida">
-            <h1 class="caja-bienvenida">
-                <span class="texto-bienvenida"><p>.</p>Hola,</span>
-                <span class="texto-bienvenida">somos <img src="../img/logo.png" alt="logo" id="logo">ey,</span>
-                <span class="texto-bienvenida">Web Design<p>.</p></span>
-            </h1>
-            <p class="subtitulo">{ Desarrolladores Full Stack - Wordpress }</p>
-            <button id="boton-bienvenida" class="boton"><a href="./pages/contacto.html">¡Contactanos!</a></button>
+                </div>
+            </div>
+            <h2 class="h2-secciones"> < /contacto ><h2/>
         </section>
-    </main>
     <!--fin del main-->
 
-    <!--Pie de pagina con redes sociales y copyright-->
-    <footer class="footer">
-        <div class="redes">
-            <a href="https://github.com/josefina0994" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.instagram.com/jose.dorola/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="mailto:jdweb@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-        </div>
-    </footer>
+   <!--Pie de pagina con redes sociales y copyright-->
+   <footer class="footer">
+    <div class="redes">
+        <a href="https://github.com/josefina0994"><img src="img/github.png" alt="Github" /></a>
+        <a href="https://www.instagram.com/jose.dorola/"><img src="img/ig.png" alt="Instagram" /></a>
+        <a href="mailto:jdweb@gmail.com"><img src="img/correo.png" alt="Correo" /></a>
+    </div>
+</footer>
     <div id="copyright">
-        <p>Creado por Jey Design Web</p>
+        <p>Copyright &#169 2022 Todos los derechos reservados | Creado por Jey Design Web</p>
     </div>
 </body>
 

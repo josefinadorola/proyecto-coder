@@ -2,35 +2,82 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" style type="text/css" href="../css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" style type="text/css" href="../css/style.css" />
     <!--Font family-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+ <!--Iconos-->
+<script src="https://kit.fontawesome.com/22c08125c6.js" crossorigin="anonymous"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 
 <body>
     <!--Cabecera con logo y menu de navegacion-->
     <header class="cabecera">
-        <div class="logo">
-            <a href="index.html"><img src="/img/logo-transparencia.png" alt="logo" /></a>
-        </div>      
-
             <nav class="nav-cabecera">
                 <ul>
                    <li><a href="index.html">Home</a></li>
-                   <li><a href="/pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="/pages/portfolio.html">Portfolio</a></li>
-                    <li><a href="/pages/servicios.html">Servicios</a></li>
-                   <li><a href="#contacto">Contacto</a></li>
+                   <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="../pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="../pages/servicios.html">Servicios</a></li>
+                   <li><a href="../pages/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
+            <!--menu responsive-->
+            <nav class="nav-responsive">
+              <i class="fa-solid fa-bars"></i>
+              <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                  <li><a href="../pages/portfolio.html">Portfolio</a></li>
+                  <li><a href="../pages/servicios.html">Servicios</a></li>
+                 <li><a href="../pages/contacto.html">Contacto</a></li>
+              </ul>
+          </nav>
     </header>
         <!--Fin de la cabecera-->
+
+         <!--Sección de portfolio-->
+         <section>
+            <div class="titulos-portfolio">
+                <h2 class="h2-secciones"> < portfolio ></>
+            </div>
+            <div class="portfolio">
+                    <a href="https://google.com" target="_blank">
+                        <img src="img/Portfolio/portfolio1.jpg" alt="portfolio1" />
+                    </a>
+                    <a href="https://google.com" target="_blank">
+                        <img src="img/Portfolio/portfolio2.jpg" alt="portfolio2" />
+                    </a>
+                    <a href="https://google.com" target="_blank">
+                        <img src="img/Portfolio/portfolio3.jpg" alt="portfolio3" />
+                    </a>
+                    <a href="https://google.com" target="_blank">
+                        <img src="img/Portfolio/portfolio4.jpg" alt="portfolio4" />
+                    </a>
+                    <a href="https://google.com" target="_blank">
+                        <img src="img/Portfolio/portfolio5.jpg" alt="portfolio5" />
+                    </a>
+                    <a href="https://google.com" target="_blank">
+                        <img src="img/Portfolio/portfolio6.jpg" alt="portfolio6" />
+                    </a>
+                    <a href="https://google.com" target="_blank">
+                        <img src="img/Portfolio/portfolio7.jpg" alt="portfolio7" />
+                    </a>
+                    <a href="https://google.com" target="_blank">
+                        <img src="img/Portfolio/portfolio8.jpg" alt="portfolio8" />
+                    </a>  
+            </div>
+           <div class="botones">
+            <button class="boton"><a href="portfolio.html">Ver más...</a></button>
+        </div>
+        <h2 class="h2-secciones"> < /portfolio ></>
+        </section>
 
     <section>
         <h1 class="titulos.paginas">PORTFOLIO</h1>
@@ -121,17 +168,14 @@
         </div>
     </section>
     <div class="clearfix"></div>
-    <!--Pie de pagina con redes sociales y copyright-->
-    <footer class="footer">
-        <div class="contenido-footer">
-            <h3>SEGUINOS</h3>
-            <div class="redes">
-                <a href="https://github.com/josefina0994"><img src="../img/github.png" alt="Github" /></a>
-                <a href="https://www.instagram.com/jose.dorola/"><img src="../img/ig.png" alt="Instagram" /></a>
-                <a href="mailto:jdweb@gmail.com"><img src="../img/correo.png" alt="Correo" /></a>
-            </div>
+       <!--Pie de pagina con redes sociales y copyright-->
+       <footer class="footer">
+        <div class="redes">
+            <a href="https://github.com/josefina0994"><img src="../img/github.png" alt="Github" /></a>
+            <a href="https://www.instagram.com/jose.dorola/"><img src="../img/ig.png" alt="Instagram" /></a>
+            <a href="mailto:jdweb@gmail.com"><img src="../img/correo.png" alt="Correo" /></a>
         </div>
-    </footer>
+</footer>
     <div id="copyright">
         <p>Copyright &#169 2022 Todos los derechos reservados | Creado por JD Design Web</p>
     </div>
