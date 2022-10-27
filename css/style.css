@@ -199,88 +199,17 @@ p {
   margin-top: 50px;
   padding: 30 px 50px;
 }
+
+.titulos.paginas {
+  padding-top: 100px;
+}
 /*Fin estilos generales paginas*/
 
 
-/*Sección nosotros del index*/
-  .nosotros{
-    display: flex;
-    justify-content: center;     
-
-  }
-
-  .item-nosotros{
-    display: flex;
-    flex-direction: column;
-    margin: 50px;
-
-  }
-
-  .item-nosotros div img{
-    object-fit: cover;
-  }
-
-  .img-nosotros{
-      width: 350px;
-      height: 350px;
-      border-radius: 100%;
-      border: 2px solid #ffffff;
-      opacity: 40%;
-  }
-
-  .img-nosotros:hover{
-    opacity: 100%;
-    transition: 1s;
-  }
-
-/* Fin sección nosotros del index*/
-
-/*Sección portfolio del index*/
-.portfolio{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  margin: 0 30px 0 30px;
-}
-
-.portfolio img {
-  width: 350px;
-  height: 300px;
-  border-radius: 10%;
-  margin: 10px;
-  filter: grayscale(100%);/*filtro byn sobre imagenes*/
-
-}
-
-.portfolio img:hover{
-  filter: none;
-}
-
-/* Fin sección portfolio de index*/
-
-/*Sección servicios del index*/
-
-
-.servicios{
-  display: flex;
-  justify-content: center;
-  margin-top: 0;
-}
-
-.servicios img {
-  width: 350px;
-  height: 200px;
-  border-radius: 10%;
-  margin: 10px;
-  filter: grayscale(100%);/*filtro byn sobre imagenes*/
-}
-
-
-/* Fin sección servicios del index*/
 
 /*CSS formulario y página contacto*/
 .formulario {
-  width: 60%;
+  width: 70%;
   margin: 20px auto;
 }
 
@@ -301,7 +230,7 @@ form label {
 
 form input {
   width: 100%;
-  padding: 3px 10px;
+  padding: 8px;
   margin: 8px 0;
   border: 1px solid #f6f6f6;
   border-radius: 3px;
@@ -334,83 +263,67 @@ form .boton:hover{
 }
 /*Fin CSS formulario*/
 
-.titulos.paginas {
-  padding-top: 100px;
-}
+
+
 
 /*comienzo pagina nosotros*/
 
 .nosotros-introduccion {
   text-align: center;
   margin: 100px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .nosotros-introduccion p {
   font-size: 20px;
+  color: #f6f6f6;
 }
 
-.box-nosotros {
-  position: relative;
-  width: 1200px;
+.img-nosotros{
+  width: 25em;
+  height: 25em;
+  border-radius: 100%;
+  border: 2px solid #ffffff;
+  opacity: 40%;
+  object-fit: cover;
+}
+
+.img-nosotros:hover{
+opacity: 100%;
+transition: 1s;
+}
+
+
+.row-nosotros{
+  align-items: center;
+  
+}
+
+.col-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 500px;
-  margin: 10px 200px 0;
-}
-
-.nosotros-foto {
-  position: absolute;
-  top: 60px;
-  left: 150px;
-  width: 250px;
-  height: 400px;
-}
-
-.nosotros-foto img {
-  width: 250px;
-  height: 400px;
-}
-
-.nosotros-datos {
-  position: absolute;
-  top: 60px;
-  left: 450px;
-  width: 600px;
-  height: 300px;
 }
 
 .nosotros-datos p {
-  font-size: 17px;
-  padding: 10px;
+  font-size: 1.3em;
   text-align: left;
+  color: #f6f6f6;
 }
 
 .nosotros-datos h3 {
   text-align: left;
-  font-size: 30px;
-  padding: 5px 10px;
+  font-size: 1.5em;
   color: #08fdd8;
 }
 
 /*fin pagina nosotros*/
 
-/*Comienzo pagina servicios*/
+/*Comienzo página servicios*/
 
-.box-servicios {
-  display: block;
-  float: left;
-  width: 350px;
-  margin: 10px;
-}
 
-.box-servicios h3 {
-  text-align: center;
-  font-size: 30px;
-  margin: 30px;
-}
-
-.box-servicios img {
-  width: 200px;
-  height: 100px;
-}
+/*Fin página servicios*/
 
 /*css del footer*/
 .footer {
