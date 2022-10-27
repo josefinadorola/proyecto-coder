@@ -452,8 +452,8 @@ form .boton:hover{
   }
 
   .texto-bienvenida{
-  font-size: 1.5em;
-  line-height: 1em;
+  font-size: 2em;
+  line-height: 1.2em;
   }
 
   .texto-bienvenida p{/*css de los puntos en el texto de bienvenida*/
@@ -461,20 +461,14 @@ form .boton:hover{
 }
 
 #logo { /*logo del texto de bienvenida*/
-  width: 25px;
-  height: 35px;
+  width: 40px;
+  height: 50px;
   margin-right: 3px;
-
 }
 
 .subtitulo{
   padding: 20px 0 10px;
-  font-size: 1em;
-}
-
-#boton-bienvenida {
-  font-size: 0.6em;
-  padding: 12px 15px;
+  font-size: 1.3em;
 }
 
 .fa-envelope, .fa-github, .fa-instagram{
