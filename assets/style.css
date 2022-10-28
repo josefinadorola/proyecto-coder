@@ -5,36 +5,32 @@
 }
 
 body {
-  background-image: url("../img/constelacion2.png");
-  background-size: 100%;
-  background-attachment: fixed;
+  background-color: #222020 !important;
   font-family: 'Poppins', sans-serif;
   color: white;
-
 }
 
 /*Estilos de la cabecera*/
 .cabecera {
   display: flex;
-  justify-content: space-around;
-  background-color: #222020;
-  position: fixed;
+  justify-content: space-between;
   top: 0;
   width: 100%;
-  height: 60px;
-  border-bottom: 1px solid rgb(139, 139, 139);
+  height: 50px;
   z-index: 2;
 }
 
-
 /*Estilos del menú*/
+.logo-ham{
+  display: none;
+}
 
-.navbar{
+nav.navbar{
   display: flex;
   justify-content: end;
   width: 100%;
   text-align:center;
-  margin-right: 30px;
+  margin: 20px;
 }
 
 .navbar ul{
@@ -44,9 +40,8 @@ body {
 
 .navbar ul li{
   display: inline-block;
-  padding: 10px 20px;
-  margin-top: 5px;
-  font-size: 17px;
+  padding: 10px;
+  font-size: 1em;
   font-family: 'Poppins', sans-serif;
 }
 .navbar ul li a{
@@ -60,12 +55,31 @@ body {
 
 }
 
-/*Menú responsive*/
-.nav-responsive{
-  display: none;
+/*Fin del menú*/
+
+/*Estilos generales de las páginas*/
+.botones{
+  display: flex;
+  justify-content: center;
 }
 
-/*Fin del menú*/
+.logo-paginas img{
+  /*logo navbar de las páginas*/
+  width: 10%;
+  margin: 10px 20px;
+}
+
+.h2-secciones{
+  font-family: 'Caveat', cursive;
+  font-style: italic;;
+  color: #d12c50;
+  display: flex;
+  margin-left: 30px;
+  font-size: 3em;
+  padding: 50px;
+}
+
+/*Fin estilos generales paginas*/
 
 /*Estilos generales de los botones*/
 
@@ -103,54 +117,36 @@ body {
 /*Estilo general de las secciones y los box interiores*/
 
 section {
-  width: 100%;
-  height: 800px;
+  width: 80%;
   padding: 30px;
 }
 
-h3,
-p {
-  font-size: 20px;
-  text-align: center;
-}
-
-/*Fin de estilos general de las secciones y box intenriores*/
+/*Fin de estilos general de las secciones y box interiores*/
 
 /*animación en el texto de bienvenida*/
 .seccion-bienvenida {
-  padding: 210px 100px;
+  padding: 100px;
 }
 
 .texto-bienvenida{
-  font-size: 100px;
-  line-height: 90px;
+  font-size: 3em;
+  line-height: 1em;
   font-weight: bold;
   display: block;
   font-family: 'Open Sans', sans-serif;
   }
 
 
-.texto-bienvenida:hover{
-  transform:translate(50%,0);
-  transition: all 3s;
-  /*prefijos*/
-  -webkit-transform: translate(50%,0);
-  -o-transform: translate(50%,0);
-  -moz-transform: translate(50%,0);
-}
-
-
 .texto-bienvenida p{/*css de los puntos en el texto de bienvenida*/
   display: inline;
-  font-size: 120px;
+  font-size: 1.2em;
   color: #d12c50;
-
 }
 
 #logo { /*logo del texto de bienvenida*/
   cursor: pointer;
-  width: 60px;
-  height: 80px;
+  width: 40px;
+  height: 60px;
   margin-right: 5px;
   transition: all 0.3s;
 
@@ -163,47 +159,22 @@ p {
 }
 
 .subtitulo{
-  font-family: 'Caveat', cursive;
   color:#8a8787;
-  padding: 30px 0;
+  font-family: 'Caveat', cursive;
+  font-size: 1.8em;
   display: flex;
   justify-content: left;
-  font-size: 40px;
+  padding: 10px 0; 
 }
 
 #boton-bienvenida {
   margin-left: 0;
+  font-size: 0.9em;
+  padding: 15px 25px;
 }
-
 /*Fin sección de bienvenida*/
 
 
-.botones{
-  display: flex;
-  justify-content: center;
-}
-
-.logo-paginas img{
-  /*logo navbar de las páginas*/
-  width: 10%;
-  margin: 10px 20px;
-}
-
-.h2-secciones{
-  font-family: 'Caveat', cursive;
-  font-style: italic;;
-  color: #d12c50;
-  display: flex;
-  margin-left: 30px;
-  font-size: 50px;
-  margin-top: 50px;
-  padding: 30 px 50px;
-}
-
-.titulos.paginas {
-  padding-top: 100px;
-}
-/*Fin estilos generales paginas*/
 
 
 
@@ -263,25 +234,11 @@ form .boton:hover{
 }
 /*Fin CSS formulario*/
 
-
-
-
 /*comienzo pagina nosotros*/
 
-.nosotros-introduccion {
-  text-align: center;
-  margin: 100px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.nosotros-introduccion p {
-  font-size: 20px;
-  color: #f6f6f6;
-}
-
 .img-nosotros{
-  width: 25em;
-  height: 25em;
+  width: 20em;
+  height: 20em;
   border-radius: 100%;
   border: 2px solid #ffffff;
   opacity: 40%;
@@ -293,28 +250,30 @@ opacity: 100%;
 transition: 1s;
 }
 
-
 .row-nosotros{
-  align-items: center;
-  
+  background-color: #131212;
+  align-items: center; 
+  border-radius: 5px;
+  margin: 20px;
 }
 
 .col-img{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 400px;
+  background-color: #131212;
 }
 
 .nosotros-datos p {
-  font-size: 1.3em;
+  font-size: 1em;
   text-align: left;
   color: #f6f6f6;
 }
 
 .nosotros-datos h3 {
   text-align: left;
-  font-size: 1.5em;
+  font-size: 2em;
   color: #08fdd8;
 }
 
@@ -330,17 +289,26 @@ transition: 1s;
   display: flex;
   justify-content: center;
   width: 100%;
-  height: auto;
-  margin-top: 100px;
-  position: fixed;
   bottom: 0;
+  position: fixed;
+  padding: 20px;
+}
+
+.redes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 1em;
+}
+
+.redes fa-brands{
+  font-size: 2em;
 }
 /*Clase para las imagenes de redes sociales*/
 
 .fa-envelope, .fa-github, .fa-instagram{
   padding: 10px;
-  font-size: 3em;
-  margin-bottom: 50px;
+  font-size: 2em;
 }
 
 .footer a{
@@ -349,28 +317,25 @@ transition: 1s;
 
 .footer i:hover{
   transform: scale(1.2);
+  color: #08fdd8;
 }
 
-/*Fin de footer*/
-
-/*css copyright*/
 #copyright {
-  background-color: #222020;
-  padding: 10px;
-  margin-top: 50px;
+  color: #f6f6f6;
   text-align: center;
-  position: fixed;
   bottom: 0;
-  display: block;
+  padding: 5px;
   width: 100%;
+  position: fixed;
 }
 
 #copyright p{
-  font-size: 1em;
+  font-size: 0.8em;
 }
+/*Fin de footer*/
 
-/*Desde 0px hasta 900px se ejecutaran los siguientes estilos*/
-@media only screen and (max-device-width: 800px){
+/*Desde 0px hasta 900px se ejecutaran los siguientes estilos* Horizontal 750*/ 
+@media only screen and (max-device-width: 650px) /*and (max-device-height: 800px)*/{
 
   .nav-cabecera{
     display: none;
@@ -396,8 +361,7 @@ transition: 1s;
   }
 
   .nav-responsive ul{
-    background-color: #222020;
-   
+    background-color: #222020;  
   }
 
   .nav-responsive ul li{
@@ -448,7 +412,7 @@ transition: 1s;
 }
 
 #copyright p{
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
 /*Fin sección de bienvenida*/
