@@ -363,6 +363,10 @@ div.col-img{
 
 /*Desde 0px hasta 900px se ejecutaran los siguientes estilos* Horizontal 750*/ 
 @media screen and (max-device-width: 900px) /*and (max-device-height: 800px)*/{
+  section{
+    padding: 0;
+    width: 100%;
+  }
 
   .cabecera{
     width: 100%;
@@ -432,9 +436,14 @@ div.col-img{
   width: 100%;
 }
 
+.artPortfolio{
+  margin: 0;
+}
+
 form {
   padding: 0;
-  border: none;
+  margin: 0;
+  border: 0;
 }
 
 .fa-envelope, .fa-github, .fa-instagram{
