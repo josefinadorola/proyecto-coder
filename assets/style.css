@@ -301,7 +301,7 @@ div.col-img{
   background-color: #131212;
   height: 300px;
   border: 1px solid white;
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
   border-radius: 10px;
 }
@@ -429,9 +429,13 @@ div.col-img{
   font-size: 1.3em;
 }
 
+form {
+  padding: 0;
+}
+
 .fa-envelope, .fa-github, .fa-instagram{
   font-size: 1.5em;
-  margin-bottom: 40px;
+
 }
 
 #copyright p{
