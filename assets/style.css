@@ -129,54 +129,25 @@ section{
 /*Fin de estilos generales de los h1, h2, b y botones*/
 
 /*animación en el texto de bienvenida*/
-.seccion-bienvenida {
-  padding: 100px;
+
+.contBienvenida{
+  padding-top: 50px;
 }
 
-.texto-bienvenida{
-  font-size: 3em;
-  line-height: 1em;
-  font-weight: bold;
-  display: block;
-  font-family: 'Open Sans', sans-serif;
-  }
-
-
-.texto-bienvenida p{/*css de los puntos en el texto de bienvenida*/
-  display: inline;
-  font-size: 1.2em;
-  color: #d12c50;
+.imgBienvenida img{
+  width: 25em;
 }
 
-#logo { /*logo del texto de bienvenida*/
-  cursor: pointer;
-  width: 40px;
-  height: 60px;
-  margin-right: 5px;
-  /*transition: all 0.3s;*/
-
-}
-/*
-#logo:hover{
- transform: scale(1.2);
- -webkit-transform: scale(1.2);
- -o-transform: scale(1.2);
- -moz-transform: scale(1.2);
-}*/
-
-.subtitulo{
-  color:#8a8787;
-  font-family: 'Caveat', cursive;
-  font-size: 1.8em;
+.colBoton{
   display: flex;
-  justify-content: left;
-  padding: 10px 0; 
+  justify-content: center;
+  padding: 20px 0;
+  
 }
 
 #boton-bienvenida {
-  margin-left: 0;
-  font-size: 0.9em;
-  padding: 15px 25px;
+  font-size: 1em;
+  padding: 20px 35px;
 }
 /*Fin sección de bienvenida*/
 
@@ -239,7 +210,6 @@ form .boton:hover{
 
 /*comienzo pagina nosotros*/
 
-
 .img-nosotros{
   width: 20em;
   height: 20em;
@@ -283,11 +253,6 @@ div.col-img{
 
 /*fin pagina nosotros*/
 
-/*Comienzo página servicios*/
-
-
-/*Fin página servicios*/
-
 /*Comienzo pagina portfolio*/
 .boxPortfolio{
   display: flex;
@@ -296,15 +261,16 @@ div.col-img{
 }
 
 .artPortfolio{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #131212;
   height: 300px;
   border: 1px solid white;
-  width: 75%;
-  margin: 0 auto;
   border-radius: 10px;
+}
+
+.artPortfolio div.col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -324,17 +290,16 @@ div.col-img{
   margin: 0;
 }
 
-
 .redes{
   display: flex;
   flex-direction: row;
   justify-content: center;
-
+  
 }
 
 /*Clase para las imagenes de redes sociales*/
 
-.fa-envelope, .fa-github, .fa-instagram{
+.fa-linkedin, .fa-github, .fa-instagram{
   padding: 10px;
   font-size: 2.2em;
 }
@@ -367,6 +332,10 @@ div.col-img{
   section{
     padding: 0;
     width: 100%;
+  }
+
+  .p-secciones{
+    margin-left: 20px;
   }
 
   .cabecera{
@@ -409,30 +378,21 @@ div.col-img{
     }
 
 
-    /*animación en el texto de bienvenida*/
-  .seccion-bienvenida {
-    padding: 100px 30px 0;
-  }
+    /* bienvenida*/
+  .contBienvenida{
+      padding-top: 20px;
+    } 
+   
+    .imgBienvenida img{
+      width: 18em;
+    } 
+  
+    #boton-bienvenida {
+      font-size: 0.8em;
+      padding: 10px 25px;
+    }
 
-  .texto-bienvenida{
-  font-size: 1.8em;
-  line-height: 1.2em;
-  }
 
-  .texto-bienvenida p{/*css de los puntos en el texto de bienvenida*/
-  font-size: 1.4em;
-}
-
-#logo { /*logo del texto de bienvenida*/
-  width: 40px;
-  height: 50px;
-  margin-right: 3px;
-}
-
-.subtitulo{
-  padding: 20px 0 10px;
-  font-size: 1.3em;
-}
 .formulario{
   width: 90%;
   padding: 0;
@@ -451,10 +411,11 @@ form {
 }
 
 
-.fa-envelope, .fa-github, .fa-instagram{
+.fa-github, .fa-instagram, .fa-linkedin{
   font-size: 1.5em;
 
 }
+
 
 #copyright p{
   font-size: 0.7em;
