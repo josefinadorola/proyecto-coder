@@ -63,7 +63,7 @@ nav.navbar{
 /*Estilos generales de las páginas*/
 
 section{
-  width: 80%;
+  width: 100%;
   padding: 10px 50px;
   margin-bottom: 100px;
 }
@@ -90,6 +90,7 @@ section{
   color: #d12c50;
   font-size: 2.5em;
   padding: 50px 0;
+  margin-left: 150px;
 }
 
 /*Fin estilos generales paginas*/
@@ -182,7 +183,7 @@ section{
 
 /*CSS formulario y página contacto*/
 .formulario {
-  width: 90%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -301,7 +302,7 @@ div.col-img{
   background-color: #131212;
   height: 300px;
   border: 1px solid white;
-  width: 90%;
+  width: 75%;
   margin: 0 auto;
   border-radius: 10px;
 }
@@ -433,7 +434,7 @@ div.col-img{
   font-size: 1.3em;
 }
 .formulario{
-  width: 95%;
+  width: 90%;
   padding: 0;
 }
 
@@ -446,7 +447,7 @@ form {
 
 .artPortfolio{
   margin: 0;
-  width: 95%;
+  width: 90%;
 }
 
 
