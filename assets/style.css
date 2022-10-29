@@ -428,9 +428,13 @@ div.col-img{
   padding: 20px 0 10px;
   font-size: 1.3em;
 }
+.formulario{
+  width: 100%;
+}
 
 form {
   padding: 0;
+  border: none;
 }
 
 .fa-envelope, .fa-github, .fa-instagram{
