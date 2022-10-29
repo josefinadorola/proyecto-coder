@@ -434,10 +434,7 @@ div.col-img{
 }
 .formulario{
   width: 100%;
-}
-
-.artPortfolio{
-  margin: 0;
+  padding: 0;
 }
 
 form {
@@ -445,6 +442,13 @@ form {
   margin: 0;
   border: 0;
 }
+
+
+.artPortfolio{
+  margin: 0;
+  width: 100%;
+}
+
 
 .fa-envelope, .fa-github, .fa-instagram{
   font-size: 1.5em;
