@@ -8,10 +8,10 @@
   background-color: #222020;
   font-family: 'Poppins', sans-serif;
   color:#f6f6f6;
+  background-image: url(../assets/img/constelacion2.png);
 }
 
 /*Estilos del menú*/
-
 .navbar-collapse{
   flex-grow: 0 !important; /*ordena hacia el costado el navbar*/
 }
@@ -56,14 +56,14 @@ section{
   margin: 10px 20px;
 }
 
-.h2-secciones{
-  padding: 20px 0;
-  display: flex;
-  justify-content: left !important;
-  font-size: 1.8em;
-  font-weight: bold;
+.p-secciones{
+  font-family: 'Caveat', cursive;
+  font-style: italic;;
+  color: #d12c50;
+  font-size: 2.5em;
+  padding: 50px 0;
+  margin-left: 150px;
 }
-
 
 /*Fin estilos generales paginas*/
 
@@ -106,26 +106,19 @@ section{
   padding-top: 50px;
 }
 
-
-.imgBienvenida{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
 .imgBienvenida img{
-  width: 20em;
+  width: 25em;
 }
 
 .colBoton{
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  padding: 20px 0;
   
 }
 
 #boton-bienvenida {
-  font-size: 0.9em;
+  font-size: 1em;
   padding: 20px 35px;
 }
 /*Fin sección de bienvenida*/
@@ -252,7 +245,9 @@ div.col-img{
   align-items: center;
 }
 
+
 /*Fin pagina portfolio**/
+
 
 
 /*css del footer*/
@@ -262,12 +257,9 @@ div.col-img{
   flex-direction: column;
   width: 100%;
   bottom: 0;
+  position: fixed;
   padding: 20px;
   margin: 0;
-}
-
-.footerIndex{
-  position: fixed;
 }
 
 .redes{
@@ -359,22 +351,12 @@ div.col-img{
 
 
     /* bienvenida*/
-
-    .imgBienvenida img{
-    width: 15em;
-  }
-
-  #boton-bienvenida {
-    font-size: 0.8em;
-    padding: 15px 25px;
-  }
-
   .contBienvenida{
       padding-top: 20px;
     } 
    
     .imgBienvenida img{
-      width: 15em;
+      width: 18em;
     } 
   
     #boton-bienvenida {
@@ -394,44 +376,23 @@ form {
   border: 0;
 }
 
+
 .artPortfolio{
   margin: 0;
   width: 90%;
 }
 
+
 .fa-github, .fa-instagram, .fa-linkedin{
   font-size: 1.5em;
+
 }
+
 
 #copyright p{
   font-size: 0.7em;
 }
 
 /*Fin sección de bienvenida*/
-
-}
-
-
-@media screen and (max-device-height: 800px){
-  .imgBienvenida img{
-    width: 15em;
-  }
-
-  .imgBienvenida{
-    margin-bottom: 0;
-  }
-
-  #boton-bienvenida {
-    font-size: 0.8em;
-    padding: 15px 25px;
-  }
-
-  .fa-github, .fa-instagram, .fa-linkedin{
-    font-size: 1.5em;
-  }
-  
-  #copyright p{
-    font-size: 0.7em;
-  }
 
 }
