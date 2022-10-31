@@ -10,53 +10,25 @@
   color:#f6f6f6;
 }
 
-/*Estilos de la cabecera*/
-.cabecera {
-  display: flex;
-  justify-content: space-between;
-  top: 0;
-  width: 100%;
-  height: auto;
-  z-index: 2;
-}
-
 /*Estilos del menú*/
-.logo-ham{
-  display: none;
+
+.navbar-collapse{
+  flex-grow: 0 !important; /*ordena hacia el costado el navbar*/
 }
 
-nav.navbar{
-  display: flex;
-  justify-content: end;
-  width: 100%;
-  text-align:center;
-  margin: 20px;
-}
-
-.navbar ul{
-  list-style: none;
-  text-decoration: none;
-}
-
-.navbar ul li{
-  display: inline-block;
-  padding: 10px;
-  font-size: 1em;
+.navbar-nav li a{
+  color:#f6f6f6;
   font-family: 'Poppins', sans-serif;
 }
-.navbar ul li a{
-  text-decoration: none;
-  color:#f6f6f6;
+
+.active, .navbar-nav li a:hover{
+  text-decoration:line-through !important;
+  color: #08fdd8 !important;
 }
 
-.navbar ul li a:hover{
-  text-decoration: line-through;
-  color:#08fdd8;
-
-}
 .logoNavBar{
-  width: 25%;
-  padding: 15px;
+  width: 15%;
+  padding: 10px;
 }
 /*Fin del menú*/
 
@@ -84,14 +56,14 @@ section{
   margin: 10px 20px;
 }
 
-.p-secciones{
-  font-family: 'Caveat', cursive;
-  font-style: italic;;
-  color: #d12c50;
-  font-size: 2.5em;
-  padding: 50px 0;
-  margin-left: 150px;
+.h2-secciones{
+  padding: 20px 0;
+  display: flex;
+  justify-content: left !important;
+  font-size: 1.8em;
+  font-weight: bold;
 }
+
 
 /*Fin estilos generales paginas*/
 
@@ -134,19 +106,26 @@ section{
   padding-top: 50px;
 }
 
+
+.imgBienvenida{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
 .imgBienvenida img{
-  width: 25em;
+  width: 20em;
 }
 
 .colBoton{
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  margin-bottom: 50px;
   
 }
 
 #boton-bienvenida {
-  font-size: 1em;
+  font-size: 0.9em;
   padding: 20px 35px;
 }
 /*Fin sección de bienvenida*/
@@ -273,9 +252,7 @@ div.col-img{
   align-items: center;
 }
 
-
 /*Fin pagina portfolio**/
-
 
 
 /*css del footer*/
@@ -285,9 +262,12 @@ div.col-img{
   flex-direction: column;
   width: 100%;
   bottom: 0;
-  position: fixed;
   padding: 20px;
   margin: 0;
+}
+
+.footerIndex{
+  position: fixed;
 }
 
 .redes{
@@ -379,12 +359,22 @@ div.col-img{
 
 
     /* bienvenida*/
+
+    .imgBienvenida img{
+    width: 15em;
+  }
+
+  #boton-bienvenida {
+    font-size: 0.8em;
+    padding: 15px 25px;
+  }
+
   .contBienvenida{
       padding-top: 20px;
     } 
    
     .imgBienvenida img{
-      width: 18em;
+      width: 15em;
     } 
   
     #boton-bienvenida {
@@ -404,23 +394,44 @@ form {
   border: 0;
 }
 
-
 .artPortfolio{
   margin: 0;
   width: 90%;
 }
 
-
 .fa-github, .fa-instagram, .fa-linkedin{
   font-size: 1.5em;
-
 }
-
 
 #copyright p{
   font-size: 0.7em;
 }
 
 /*Fin sección de bienvenida*/
+
+}
+
+
+@media screen and (max-device-height: 800px){
+  .imgBienvenida img{
+    width: 15em;
+  }
+
+  .imgBienvenida{
+    margin-bottom: 0;
+  }
+
+  #boton-bienvenida {
+    font-size: 0.8em;
+    padding: 15px 25px;
+  }
+
+  .fa-github, .fa-instagram, .fa-linkedin{
+    font-size: 1.5em;
+  }
+  
+  #copyright p{
+    font-size: 0.7em;
+  }
 
 }
