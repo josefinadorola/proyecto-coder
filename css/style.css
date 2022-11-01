@@ -4,16 +4,29 @@
   box-sizing: border-box;
 }
 
-.body {
-  background-color: #222020;
-  background-image: url(../assets/img/constelacion2.png);
+.bodyIndex {
+  height: 100%;
+  background-color: #000000;
+  background-image: url(../assets/img/empire.png);
+  background-position:left;
+  background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   font-family: "Poppins", sans-serif;
+  color: #f6f6f6;
+}
+
+.bodyPaginas{
+  background-color: #000000;
   color: #f6f6f6;
 }
 
 section {
   width: 100%;
+}
+
+.container-fluid{
+  border-bottom: 1px solid #8a8787;
 }
 /*Estilos del menú*/
 .navbar-collapse {
@@ -383,6 +396,8 @@ form .boton:hover {
   position: relative;
 }
 
+
+
 /*Fin de footer*/
 
 /*Desde 0px hasta 900px se ejecutaran los siguientes estilos* Horizontal 750*/
@@ -475,6 +490,10 @@ form .boton:hover {
   .fa-instagram,
   .fa-linkedin {
     font-size: 1.5em;
+  }
+
+  .footerIndex{
+    position: relative;
   }
 
   #copyright p {
