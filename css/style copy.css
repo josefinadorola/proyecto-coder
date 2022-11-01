@@ -56,13 +56,11 @@ section{
   margin: 10px 20px;
 }
 
-.p-secciones{
-  font-family: 'Caveat', cursive;
-  font-style: italic;;
-  color: #d12c50;
-  font-size: 2.5em;
+.h2-secciones{
+   font-size: 2.5em;
   padding: 50px 0;
   margin-left: 150px;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*Fin estilos generales paginas*/
@@ -247,8 +245,22 @@ div.col-img{
 
 
 /*Fin pagina portfolio**/
+ .row-cols-2, .col{
+  border: 1px solid white;
+ }
+/*Estilos de servicios*/
+.ico-servicios{
+  color: #08fdd8;
+  width: 3em;
+}
 
+.ico-servicios{
+  color: #08fdd8;
+  font-size: 2em;
+  padding: 20px;
+}
 
+/*Fin servicios*/
 
 /*css del footer*/
 .footer {
@@ -294,6 +306,10 @@ div.col-img{
   text-align: center;
   bottom: 0;
   font-size: 0.8em;
+}
+
+.footerPaginas{
+  position: relative;
 }
 
 
