@@ -329,6 +329,11 @@ form .boton:hover {
 /*Fin pagina portfolio**/
 
 /*Estilos de servicios*/
+.container-servicios{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
 .ico-servicios {
   display: flex;
@@ -342,11 +347,11 @@ form .boton:hover {
 .col-servicios {
   display: flex;
   flex-direction: column;
+  width: 23%;
   border: 1px solid #08fdd8;
-  padding: 2rem;
-  margin: 20px;
+  padding: 1rem;
+  margin: 0.8em;
   border-radius: 0.5em;
-  box-shadow: -0.1em 0 0.2em #8a8787;
   overflow: hidden;
   transition: all 300ms;
 }
@@ -376,7 +381,7 @@ form .boton:hover {
 .col-servicios p {
   font-size: 1.5em;
   font-weight: lighter;
-  padding: 1.2em;
+  padding: 1em;
   text-align: left;
   transition: all 300ms;
 }
@@ -552,6 +557,11 @@ form .boton:hover {
   .artPortfolio {
     margin: 0;
     width: 90%;
+  }
+
+  .col-servicios {
+    width: 100%;
+ 
   }
 
   .fa-github,
