@@ -382,7 +382,6 @@ form .boton:hover {
   font-size: 1.5em;
   font-weight: lighter;
   padding: 1em;
-  text-align: left;
   transition: all 300ms;
 }
 
@@ -531,7 +530,6 @@ form .boton:hover {
     width: 100%;
     margin: 1em 0;
     padding: 1em;
-    background-color: #222020;
     border-radius: 0.5em;
   }
 
