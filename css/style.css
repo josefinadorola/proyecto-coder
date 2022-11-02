@@ -7,8 +7,8 @@
 .bodyIndex {
   height: 100%;
   background-color: #000000;
-  background-image: url(../assets/img/empire.png);
-  background-position:left;
+  background-image: url(../assets/img/skyline.png);
+  background-position: left;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -16,7 +16,7 @@
   color: #f6f6f6;
 }
 
-.bodyPaginas{
+.bodyPaginas {
   background-color: #000000;
   color: #f6f6f6;
 }
@@ -25,12 +25,14 @@ section {
   width: 100%;
 }
 
-.container-fluid{
+.container-fluid {
   border-bottom: 1px solid #8a8787;
 }
+
 /*Estilos del menú*/
 .navbar-collapse {
-  flex-grow: 0 !important; /*ordena hacia el costado el navbar*/
+  flex-grow: 0 !important;
+  /*ordena hacia el costado el navbar*/
 }
 
 .navbar-nav li a {
@@ -97,12 +99,15 @@ section {
 /*Estilos generales de los botones*/
 
 .boton {
-  border: 1px solid #08fdd8; /*anchura, estilo y color borde*/
-  padding: 15px 40px; /*espacio alrededor texto*/
+  border: 1px solid #08fdd8;
+  /*anchura, estilo y color borde*/
+  padding: 15px 40px;
+  /*espacio alrededor texto*/
   margin: 20px;
   background-color: transparent;
   color: #08fdd8;
-  text-decoration: none; /*decoración texto*/
+  text-decoration: none;
+  /*decoración texto*/
   font-size: 17px;
   letter-spacing: 4px;
   text-align: center;
@@ -125,6 +130,7 @@ section {
   color: #222020;
   font-weight: bold;
 }
+
 /*Fin de estilos generales de los h1, h2, b y botones*/
 
 /*animación en el texto de bienvenida*/
@@ -134,6 +140,7 @@ section {
   flex-direction: column;
   padding-top: 50px;
   font-family: "OpenSans", sans-serif;
+
 }
 
 .bienvenida {
@@ -159,13 +166,18 @@ section {
 }
 
 .subtituloBienvenida {
-  font-size: 3.5em;
+  font-size: 2.8em;
+  letter-spacing: 0.2em;
+  font-family: "Poppins", sans-serif;
+
+
 }
 
 .subtituloBienvenida::before {
   content: "•";
   color: #d12c50;
 }
+
 .subtituloBienvenida::after {
   content: "•";
   color: #d12c50;
@@ -187,6 +199,7 @@ section {
   font-size: 1em;
   padding: 20px 35px;
 }
+
 /*Fin sección de bienvenida*/
 
 /*CSS formulario y página contacto*/
@@ -242,6 +255,7 @@ form .boton:hover {
   color: #222020;
   font-weight: bold;
 }
+
 /*Fin CSS formulario*/
 
 /*comienzo pagina nosotros*/
@@ -320,7 +334,7 @@ form .boton:hover {
   display: flex;
   justify-content: center;
   color: #08fdd8;
-  font-size: 2em;
+  font-size: 2.5em;
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -328,21 +342,75 @@ form .boton:hover {
 .col-servicios {
   display: flex;
   flex-direction: column;
-  background-color: #222020;
+  border: 1px solid #08fdd8;
   padding: 2rem;
   margin: 20px;
   border-radius: 0.5em;
+  box-shadow: -0.1em 0 0.2em #8a8787;
+  overflow: hidden;
+  transition: all 300ms;
 }
 
+
 .col-servicios:hover {
-  box-shadow: -0.1em 0 0.2em #8a8787;
+  background-color: #222020;
+
+}
+
+.col-servicios:hover .ico-servicios {
+  font-size: 4em;
+  animation: showIcon 300ms linear;
+
+}
+
+@keyframes showIcon {
+  from {
+    transform: translateY(-200%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
 }
 
 .col-servicios p {
-  font-size: 0.9em;
-  padding: 1em;
+  font-size: 1.5em;
+  font-weight: lighter;
+  padding: 1.2em;
   text-align: left;
+  transition: all 300ms;
 }
+
+.col-servicios:hover p {
+  animation: showTexto 300ms linear;
+  font-weight: normal;
+}
+
+@keyframes showTexto {
+  from {
+    transform: translateX(-200%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.col-servicios:hover h3 {
+  animation: showTitulo 400ms linear;
+  font-weight: bold;
+}
+
+@keyframes showTitulo {
+  from {
+    transform: translateY(-200%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
 
 /*Fin servicios*/
 
@@ -400,7 +468,7 @@ form .boton:hover {
 
 /*Fin de footer*/
 
-/*Desde 0px hasta 900px se ejecutaran los siguientes estilos* Horizontal 750*/
+/*Desde 0px hasta 900px se ejecutaran los siguientes estilos* Horizontal 900*/
 @media screen and (max-device-width: 900px) {
   section {
     padding: 0;
@@ -410,6 +478,10 @@ form .boton:hover {
   i.fa-solid {
     font-size: 3em;
     padding: 20px;
+  }
+
+  .container-fluid {
+    border-bottom: none;
   }
 
   .navbar {
@@ -442,15 +514,11 @@ form .boton:hover {
 
   #boton-bienvenida {
     font-size: 0.8em;
-    padding: 10px 25px;
+    padding: 15px 25px;
   }
 
   .subtituloBienvenida {
-    font-size: 2.5em;
-  }
-
-  .p-bienvenida {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   /*Nosotros*/
@@ -492,7 +560,7 @@ form .boton:hover {
     font-size: 1.5em;
   }
 
-  .footerIndex{
+  .footerIndex {
     position: relative;
   }
 
@@ -503,7 +571,7 @@ form .boton:hover {
   /*Fin sección de bienvenida*/
 }
 
-@media screen and (max-device-width: 500px) {
+@media screen and (max-device-width: 600px) {
   .logoNavBar {
     width: 3em;
   }
@@ -529,19 +597,49 @@ form .boton:hover {
   }
 
   .subtituloBienvenida {
-    font-size: 2em;
-  }
-
-  .p-bienvenida {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
 
   .colBoton {
     padding: 0;
   }
- 
-.imgPortfolio {
-  width: 20em;
+
+  .imgPortfolio {
+    width: 20em;
+  }
+
 }
+
+@media screen and (max-device-height: 800px) {
+
+  /* bienvenida*/
+  .tituloBienvenida {
+    margin-bottom: 0.8em;
+    padding-bottom: 0;
+  }
+
+  #logoBienvenida img {
+    width: 3em;
+  }
+
+  #ey {
+    font-size: 3.5em;
+  }
+
+  .subtituloBienvenida {
+    font-size: 2em;
+  }
+
+
+  .boton-bienvenida,
+  .colBoton {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  #boton-bienvenida {
+    font-size: 0.8em;
+    padding: 15px 25px;
+  }
 
 }

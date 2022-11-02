@@ -19,6 +19,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
+  <!--CSS AOS-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <title>Nosotros</title>
 
 </head>
@@ -65,19 +68,20 @@
           <span class="titulo-borde"></span>
       </div>
       <div class="container">
-        <article class="item-nosotros">
+        <div class="item-nosotros" data-aos="fade-right"
+        data-aos-duration="3000">
           <div class="text-center">
             <a href="https://instagram.com" target="_blank"><img src="../assets/img/julian.png" alt="Julian"
                 class="img-nosotros" /></a>
           </div>
-          <div></div>
           <h3 class="text-center tituloNosotros">JULIAN ALONSO</h3>
           <p class="text-justify descripcionNosotros">
             Un desarrollador con todas las letras. Una máquina de resolver desde el más simple de los problemas hasta el
             más complejo de los desafíos.
           </p>
-        </article>
-        <article class="item-nosotros">
+        </div>
+        <div class="item-nosotros" data-aos="fade-left"
+        data-aos-duration="3000">
           <div class="text-center">
             <a href="https://instagram.com" target="_blank"><img src="../assets/img/josefina.png" alt="Josefina"
                 class="img-nosotros" /></a>
@@ -86,7 +90,7 @@
           <p class="text-center text-justify descripcionNosotros">En la agencia estamos pensando en desarrollar una
             máquina para clonarla y tener varias iguales. Estamos convencidos de que el mundo sería un lugar mejor. Es
             responsable, empática, inteligente.</p>
-        </article>
+        </div>
       </div>
     </section>
   </main>
@@ -102,10 +106,16 @@
       <p>Creado por Jey Diseño Web</p>
     </div>
   </footer>
-
+  <!--Bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
+  <!--CSS AOS-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 
 </body>
 
